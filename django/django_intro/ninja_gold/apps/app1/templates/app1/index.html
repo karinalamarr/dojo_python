@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja Money</title>
+</head>
+
+<body>
+    <h1>Your GOLD:{{number}}</h1>
+    <div>
+
+        <div>
+            <h1>Farm</h1>
+            <h3>(earns 10 -20 golds)</h3>
+            <form action="/farm" method="post">
+                {% csrf_token %}
+                <button type="submit">Find Gold!</button>
+            </form>
+        </div>
+
+        <div>
+            <h1>Cave</h1>
+            <h3>(earns 5 - 10 golds)</h3>
+            <form action="/cave" method="post">
+                {% csrf_token %}
+                <button type="submit">Find Gold!</button>
+            </form>
+        </div>
+
+        <div>
+            <h1>House</h1>
+            <h3>(earns 2 -5 golds</h3>
+            <form action="/house" method="post">
+                {% csrf_token %}
+                <button type="submit">Find Gold!</button>
+            </form>
+        </div>
+
+        <div>
+            <h1>Casino</h1>
+            <h3>(earns/takes 0-50 golds</h3>
+            <form action="/casino" method="post">
+                {% csrf_token %}
+                <button type="submit">Find Gold!</button>
+            </form>
+        </div>
+    </div>
+
+    <div>
+
+        <h3>Activities</h3>
+    </div>
+
+</body>
+
+
+</html>

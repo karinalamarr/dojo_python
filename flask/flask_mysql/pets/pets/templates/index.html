@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pets</title>
+</head>
+<body>
+    <h1>All Pets</h1>
+    {% for one_pet in pets %}
+    <tr>
+        <th scope ></th>
+   
+    <p>Name: {{one_pet["name"]}}</p>
+    <p>Name: {{one_pet["age"]}}</p>
+    <p>Name: {{one_pet["breed"]}}</p>
+    <p>Name: {{one_pet["color"]}}</p>
+    <hr>
+    </tr>
+    {% endfor %}
+
+    <h1>Add A Pet</h1>
+    <form action="/create_pet" method="POST">
+    <p>Name: <input type="text" name="nome"</p>
+    <p>Age: <input type="text" name="idade"</p>
+    <p>Breed: <input type="text" name="raca"</p>
+    <p>Color: <input type="text" name="cor"</p>
+    <input type"submit" value="Add a Pet">
+    </form>
+
+</body>
+</html>
